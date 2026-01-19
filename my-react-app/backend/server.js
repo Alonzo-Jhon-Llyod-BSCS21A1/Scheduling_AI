@@ -76,3 +76,25 @@ app.post("/login", (req, res) => {
   );
 });
 
+// create teachers table (only name for now)
+db.run(`
+  CREATE TABLE IF NOT EXISTS teachers (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT
+  )
+`);
+
+// add teacher route
+app.post("/teachers", (req, res) => {
+  const { name } = req.body;
+
+  db.run(
+    "INSERT INTO teachers (name) VALUES (?)",
+    [name],
+    function () {
+      res.json({ success: true, id: this.lastID });
+    }
+  );
+});
+
+
