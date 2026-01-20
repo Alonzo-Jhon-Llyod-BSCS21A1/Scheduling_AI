@@ -207,7 +207,7 @@ body {
 /* Push content when sidebar opens */
 .schedule-content.shift {
   margin-left: 240px;
-  transition: margin-left 0.3s ease;
+  transition: margin-left 0.3s ease;   
 }
 
 /* ✅ Logout pinned to bottom */
@@ -216,7 +216,7 @@ body {
   width: 100%;
   padding: 16px 24px;
   background-color:#081f4d;
-  color: red;
+  color: rgb(255, 255, 255);
   font-weight: bold;
   cursor: pointer;
   display: flex;
