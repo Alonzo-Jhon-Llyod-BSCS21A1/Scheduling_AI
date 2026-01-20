@@ -129,8 +129,8 @@ body {
 /* Page background */
 .schedule-page {
   min-height: 100vh;
-  background-color: #0a2a66;
-  color: white;
+  background-color: #e9ebef;
+  color: rgb(4, 4, 4);
 }
 
 /* Content area under header */
@@ -179,6 +179,9 @@ body {
   z-index: 1000;
   overflow-y: auto;
   overflow-x: hidden;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .sidebar.open {
@@ -208,24 +211,27 @@ body {
 }
 
 /* ✅ Logout pinned to bottom */
-.Logout {
-  position: absolute;
-  bottom: 0;
+.logout {
+  margin-top: auto;   
   width: 100%;
   padding: 16px 24px;
-  background-color: #061737;
-  color: #ffffff;
+  background-color:#081f4d;
+  color: red;
   font-weight: bold;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
-.Logout:hover {
+.logout:hover {
   background-color: rgba(255, 0, 0, 0.15);
   color: #ff4d4d;
 }
 
+
 .menu-items li,
-.Logout {
+.logout {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -237,5 +243,56 @@ body {
 .icon-logout {
   font-size: 20px;
 } 
+
+/* Page container */
+.page {
+  height: 100vh;
+  background-color: #0a2a66;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card box */
+.card {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  width: 320px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Form */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+/* Input */
+.input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* Button */
+.button {
+  background-color: #FFD500;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Message */
+.message {
+  margin-top: 12px;
+  color: green;
+  font-weight: bold;
+}
 
 
