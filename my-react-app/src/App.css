@@ -295,4 +295,93 @@ body {
   font-weight: bold;
 }
 
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0a2a66;
+  color: #fff;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #0a2a66;
+}
+
+.header .menu {
+  font-size: 24px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.header h1 {
+  color: #FFD500;
+}
+
+.add-button {
+  font-size: 50px;
+  padding: 20px;
+  border-radius: 15px;
+  margin: 50px;
+  cursor: pointer;
+}
+
+.room-form {
+  background-color: #f5f5dc;
+  color: #123456;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  margin: 20px auto;
+}
+
+.room-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.day-selection button {
+  margin: 5px;
+  padding: 5px 10px;
+}
+
+.day-selection .active {
+  background-color: #0a2a66;
+  color: white;
+}
+
+.time-inputs input {
+  width: 60px;
+  margin: 5px;
+}
+
+.course-section input {
+  width: 150px;
+  margin: 5px;
+}
+
+.form-buttons button {
+  padding: 5px 15px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-buttons .save {
+  background-color: #00ff00;
+  color: black;
+}
+
+.form-buttons .edit {
+  background-color: #ccc;
+  color: black;
+}
+
+.form-buttons .cancel {
+  background-color: #ff0000;
+  color: white;
+}
+
 
